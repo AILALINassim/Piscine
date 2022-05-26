@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Open+Sans:ital,wght@0,300;1,300;1,600&family=Poppins:wght@100;200;300;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.top{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url('../assets/Background.jfif');
+    background-position:center ;
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+.top .header{
+    width: 90%;
+    margin: auto;
+   
+}
+.top .header .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.top .header .row .left h1{
+    color: #fff;
+}
+
+
+/* right menu start from here ===================== */
+.top .header .row .right{
+    display: flex;
+    align-items: center;
+}
+.top .header .row .right .menu{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    background-color: #E3361C;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+}
+.top .header .row .right .menu img{
+    width: 30px;
+    margin-left: 10px;
+}
+.top .header .row .right a{
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.top .header .row .right a:hover{
+    color: #E3361C;
+}
+
+/* right menu section end here ================== */
+
+
+/* search section start here ================ */
+.search{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.search span{
+    position: absolute;
+    right: 5%;
+    top: 50px;
+    background-color: #DA361B;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.search form{
+    width: 90%;
+    margin:100px auto;
+    display: flex;
+}
+.search form input{
+    width: 90%;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #fff;
+    box-shadow: none;
+}
+
+.search form button{
+    width: 10%;
+    background-color: #DA361B;
+    border: none;
+    color: #fff;
+}
+/* <!-- mobile menu section start here =========================== --> */
+.mobile{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0,0.7);
+    z-index: 1000;
+    display: none;
+    transition: 0.6s;
+}
+.mobile .menu{
+    background-color: #4C4C4C;
+    width: 100%;
+    max-width: 300px;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    transition: 0.6s;
+    right: -100%;
+    z-index: 2000;
+}
+.mobile .menu a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.mobile .menu a:hover{
+   background-color: rgb(170, 168, 168);
+}
+/* <!-- mobile menu section end here =========================== --> */
+
+
+
+
+/* main section start here ======================== */
+.main-section{
+    width: 100%;
+    height: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-section .row{
+color: #fff;
+text-align: center;
+}
+.main-section .row h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+.main-section .row h1{
+    font-size: 80px;
+}
+.main-section .row a{
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #DA361B;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.main-section .row a:hover{
+    background-color: #DA361B;
+}
+/* main section end here ======================== */
+
+
+/* <!-- browse all category section here =========================== --> */
+.browse-all{
+    display: flex;
+    flex-wrap: wrap;
+}
+.browse-all .left,
+.browse-all .center,
+.browse-all .right{
+    width: 33.33%;
+    text-align: center;
+}
+/* browse all category start  here ===================== */
+.browse-all .left{
+    background-image: url('../assets/sports\ activities.jfif');
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.browse-all .center{
+    background-image: url('../assets/competitive\ sports\ .jfif');
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.browse-all .right{
+    background-image: url('../assets/sports\ hall.jfif');
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.browse-all .left .left_inner,
+.browse-all .center .center_inner,
+.browse-all .right .right_inner{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+    /* opacity: 0.5; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* z-index: -1; */
+}
+.browse-all .left .left_inner h1,
+.browse-all .center .center_inner h1,
+.browse-all .right .right_inner h1{
+    font-weight: 500;
+    color: #fff;
+    z-index: 10;
+    margin-bottom: 15px;
+}
+.browse-all .left .left_inner a,
+.browse-all .center .center_inner a,
+.browse-all .right .right_inner a{
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #DA361B;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.browse-all .left .left_inner a:hover,
+.browse-all .center .center_inner a:hover,
+.browse-all .right .right_inner a:hover{
+    background-color: #DA361B;
+}
+
+
+/* <!-- choose your program start here ========================== -->= */
+.choose{
+    width: 100%;
+}
+.choose .choose_top{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px;
+    color: #fff;
+    background-color: #DA361B;
+}
+.choose .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.choose .row .card{
+    width: 33.33%;
+    height: 300px;
+}
+.choose .row .card_1{
+    background-image: url('../assets/bodybuilding\ category.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+.choose .row .card_2{
+    background-image: url('../assets/fitness\ category.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+.choose .row .card_3{
+    background-image: url('../assets/biking\ category.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.choose .row .card_4{
+    background-image: url('../assets/cardio\ training\ category.jfif');
+    background-position: center;
+    background-size: cover;
+}
+.choose .row .card_5{
+    background-image: url('../assets/group\ lessons\ category.jfif');
+    background-position: center;
+    background-size: cover;
+}
+.choose .row .card_1 .card_1_inner,
+.choose .row .card_2 .card_2_inner,
+.choose .row .card_3 .card_3_inner,
+.choose .row .card_4 .card_4_inner,
+.choose .row .card_5 .card_5_inner,
+.choose .row .card_6 .card_6_inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0,0.5);
+}
+.choose .row .card_1 .card_1_inner h1,
+.choose .row .card_2 .card_2_inner h1,
+.choose .row .card_3 .card_3_inner h1,
+.choose .row .card_4 .card_4_inner h1,
+.choose .row .card_5 .card_5_inner h1{
+    color: #fff;
+    z-index: 10;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.choose .row .card_1 .card_1_inner a,
+.choose .row .card_2 .card_2_inner a,
+.choose .row .card_3 .card_3_inner a,
+.choose .row .card_4 .card_4_inner a,
+.choose .row .card_5 .card_5_inner a,
+.choose .row .card_6 .card_6_inner a{
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #DA361B;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+/* background-color: #DA361B; */
+
+.choose .row .card_1 .card_1_inner a:hover,
+.choose .row .card_2 .card_2_inner a:hover,
+.choose .row .card_3 .card_3_inner a:hover,
+.choose .row .card_4 .card_4_inner a:hover,
+.choose .row .card_5 .card_5_inner a:hover,
+.choose .row .card_6 .card_6_inner a:hover{
+    background-color: #DA361B;
+}
+
+
+
+
+/* our team section start here ================================ */
+.our_team .appointmentForm{
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   background:rgba(0, 0, 0, 0.7) ;
+   display: none;
+   z-index: 3000;
+}
+.our_team .appointmentForm .inner{
+    width:96%;
+    position: relative;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 25px 10px;
+   
+}
+.our_team .appointmentForm .inner span{
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    top: 5px;
+    background-color: #DA361B;
+    padding: 5px 15px;
+    /* border-radius: 50%; */
+    color: #fff;
+    border-radius: 5px;
+}
+.our_team .appointmentForm .inner h1{
+    font-weight: 550;
+    padding-bottom: 15px;
+}
+.our_team .appointmentForm .inner h4{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.our_team .appointmentForm .inner p{
+    margin-top: 15px;
+    color: #ddd;
+}
+.our_team .appointmentForm .inner input{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+}
+.our_team .our_team_top{
+    text-align: center;
+}
+.our_team .our_team_top h1{
+    padding: 50px 0px;
+}
+.our_team .row{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.our_team .row .card{
+   width: 32%;
+   height: 450px;
+   position: relative;
+   margin-bottom: 15px;
+   text-decoration: none;
+ 
+}
+
+.our_team .row .card .footer{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0,0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    flex-direction: column;
+}
+.our_team .row .card .social_media{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our_team .row .card .social_media .show_icons{
+   width: 90%;
+   z-index: 2000;
+   height: 90%;
+   margin: auto;
+   background-color: #fff;
+   padding: 15px 10px;
+   border-radius: 5px;
+   /* display: none; */
+   visibility: hidden;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   transition: 0.2s;
+}
+.our_team .row .card .social_media .show_icons p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.our_team .row .card .social_media .show_icons a{
+    padding: 10px 25px;
+    border: 2px solid #DA361B;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.our_team .row .card .social_media .show_icons a:hover{
+    background-color: #DA361B;
+    color: #fff;
+}
+.our_team .row .card:hover  .social_media .show_icons{
+visibility: visible;
+}
+
+.our_team .row .coach_1{
+  background-image: url('../assets/bodybuilding\ coach.jfif');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our_team .row .coach_2{
+    background-image: url('../assets/fitness\ coach.jfif');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our_team .row .coach_3{
+    background-image: url('../assets/biking\ coach.jfif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.our_team .row .coach_4{
+    background-image: url('../assets/cardio\ training\ coach.jfif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.our_team .row .coach_5{
+    background-image: url('../assets/group\ lessons\ category.jfif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* class time table ===================================  */
+.time_table{
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+    padding-bottom: 25px;
+    margin-top: 25px;
+}
+.time_table .time_table_top{
+    text-align: center;
+    color: #fff;
+    padding: 25px 0px;
+}
+.time_table .time_table_top h1{
+ font-weight: 550;
+}
+.time_table .table_top_headers{
+   width: 90%;
+   max-width: 1200px;
+   display: flex;
+   justify-content: space-around;
+   color: #fff;
+   text-align: center;
+   margin: auto;
+   padding: 20px 0px;
+}
+.time_table .table_top_headers p{
+    cursor: pointer;
+}
+.time_table .table_top_headers p:hover{
+    color: #DA361B;
+}
+.time_table .row{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #4C4C4C;
+    padding-top: 25px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.time_table .row table{
+    border: none!important;
+}
+.time_table .row table,.time_table .row th,.time_table .row td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: #fff;
+  }
+  .time_table .row td{
+      width: 12.5%;
+      padding: 15px 0px;
+      text-align: center;
+      color: #fff;
+  }
+  .time_table .row th{
+      border: none;
+      padding: 15px 0px;
+  }
+/* gym location ================================== */
+.location{
+    width: 100%;
+
+}
+.location .location_top{
+    width: 100%;
+    background-color: #DA361B;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+.location .location_top a{
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.location .location_top a:hover{
+    background-color: #fff;
+    color: #DA361B;
+}
+
+.location .map{
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.location .map .contact{
+   position: absolute;
+   right: 100px;
+   bottom: 50px;
+   background-color: #fff;
+   width: 350px;
+   border-radius: 5px;
+   padding: 10px;
+}
+.location .map .contact .contact_top{
+    display: flex;
+    justify-content: space-between;
+}
+.location .map .contact .row input{
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 48%;
+    outline: none;
+    box-shadow: none;
+}
+.location .map .contact input{
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 98%;
+    margin-top: 2%;
+    outline: none;
+    box-shadow: none;
+}
+.location .map .contact button{
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #000;
+    background: transparent;
+    cursor: pointer;
+    margin-top: 15px;
+    border: 2px solid #DA361B;
+    border-radius: 5px;
+    transition: 0.4s;
+    font-weight: 600;
+}
+.location .map .contact button:hover{
+    background-color: #DA361B;
+    color: #fff;
+}
+
+
+
+
+/* media queries ============== */
+@media only screen and (max-width:1100px){
+    .top .header .row .right a{
+        display: none;
+    }
+    .top{
+        height: 80vh;
+    }
+}
+@media only screen and (max-width:992px){
+    .main-section .row h3{
+        font-size: 30px;
+    }
+    .main-section .row h1{
+        font-size: 60px;
+    }
+    .browse-all .left,
+.browse-all .center,
+.browse-all .right{
+    width: 50%;
+}
+
+.choose .row .card{
+    width: 50%;
+}
+.our_team .row .card{
+    width: 48%;
+  
+ }
+}
+
+@media only screen and (max-width:792px){
+    .main-section .row h3{
+        font-size: 20px;
+    }
+    .main-section .row h1{
+        font-size: 40px;
+    }
+    .browse-all .left,
+    .browse-all .center,
+    .browse-all .right{
+        width: 100%;
+        height: 450px;
+    }
+    
+    .choose .row .card{
+        width: 100%;
+        height: 500px;
+    }
+    .our_team .row .card{
+        width: 96%;
+        height: 700px;
+      
+     }
+     .location .map .contact{
+         display: none;
+     }
+}

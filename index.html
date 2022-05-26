@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetInShape</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <!-- header section starting here ========================== -->
+      <div class="header">
+        <div class="row">
+          <div class="left">
+            <h1>LOGO</h1>
+          </div>
+          <div class="right">
+            <a href="#">Home</a>
+            <a href="#" onclick="showSearchHandler()">Browse</a>
+            <a href="#browseAll">Browse All</a>
+            <a href="./pages/login.html">My Account</a>
+            <a href="./pages/appointment.html">Appointments</a>
+            <a href="./pages/servicess.html">Services</a>
+            <div class="menu" onclick="showMobileMenuHandler()">
+              <p>Menu</p>
+              <img src="./assets/white-menu-icon-4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header section end here =============================== -->
+
+
+      <!-- search section start here ============== -->
+       <div class="search" id="search">
+        <span onclick="hideSearchHandler()">x</span>
+          <form action="#">
+              <input type="text" placeholder="Search here...">
+              <button>Search</button>
+          </form>
+       </div>
+      <!-- mobile menu section start here =========================== -->
+      <div class="mobile" id="menuBack" onclick="hideMobileMenuHandler()">
+        <div class="menu" id="menu">
+          <a href="#">Home</a>
+          <a href="#">Browse</a>
+          <a href="#browseAll">Browse All</a>
+            <a href="./pages/login.html">My Account</a>
+            <a href="./pages/appointment.html">Appointments</a>
+            <a href="./pages/servicess.html">Services</a>
+        </div>
+      </div>
+      <!-- mobile menu section end here =========================== -->
+
+      <!-- main content section start here, hero section ==================== -->
+      <div class="main-section">
+        <div class="row">
+          <h3>JOIN US NOW</h3>
+          <h1>FITNESS & SPORT</h1>
+          <a href="#">READ MORE</a>
+        </div>
+      </div>
+      <!-- main content section end here, hero section ==================== -->
+    </div>
+
+    <!-- browse all category section here =========================== -->
+    <div class="browse-all" id="browseAll">
+      <div class="left">
+        <div class="left_inner">
+          <h1>Sporting Activities</h1>
+          <a href="#">READ MORE</a>
+        </div>
+      </div>
+      <div class="center">
+        <div class="center_inner">
+          <h1>Competitive Sport</h1>
+          <a href="./pages/sportActivity.html">READ MORE</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right_inner">
+          <h1>Sport Hall</h1>
+          <a href="#">READ MORE</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- choose your program start here ========================== -->
+    <div class="choose">
+      <div class="choose_top">
+        <h1>CHOOSE YOUR PROGRAM</h1>
+      </div>
+      <div class="row">
+        <div class="card card_1">
+          <div class="card_1_inner">
+            <h1>Bodybuilding</h1>
+            <a href="#bodyB">READ MORE</a>
+          </div>
+        </div>
+        <div class="card card_2">
+          <div class="card_2_inner">
+            <h1>FITNESS</h1>
+            <a href="#fitness">READ MORE</a>
+          </div>
+        </div>
+        <div class="card card_3">
+          <div class="card_3_inner">
+            <h1>BIKING</h1>
+            <a href="#biking">READ MORE</a>
+          </div>
+        </div>
+        <div class="card card_4">
+          <div class="card_4_inner">
+            <h1>CARDIO-TRAINING</h1>
+            <a href="#cardio">READ MORE</a>
+          </div>
+        </div>
+        <div class="card card_5">
+          <div class="card_5_inner">
+            <h1>GROUP LESSON</h1>
+            <a href="#lesson">READ MORE</a>
+          </div>
+        </div>
+        <div class="card card_6">
+          <div class="card_6_inner">
+            <a href="#">ALL CATEGORY</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- our team section start here ========================= -->
+    <div class="our_team">
+        <div class="appointmentForm" id="appointment">
+            <div class="inner">
+                <span onclick="hideAppointHandler()">x</span>
+               <h1>Book An Appointment</h1>
+               <h4>Gym Trainer</h4>
+               <p style="margin-bottom: 10px;">United States</p>
+               <hr>
+               <p>Email Address</p>
+               <input type="text" placeholder="Email">
+               <p>Phone Number</p>
+               <input type="text" placeholder="0238231266326">
+               <p>Tags</p>
+               <input type="text" placeholder="Add here">
+               <br>
+               <br>
+               <input type="date" placeholder="Date">
+            </div>
+        </div>
+      <div class="our_team_top">
+        <h1>Our Team Member</h1>
+      </div>
+      <div class="row">
+        <div href="#" id="bodyB" class="card coach_1"> 
+          <div class="social_media">
+            <!-- <a href="./pages/profile.html">VIEW PROFILE</a> -->
+            <div class="show_icons">
+               <p><b>Phone :</b> &nbsp; 09231823443</p>
+               <p><b>Email :</b> &nbsp;email@gmail.com</p>
+               <p><b>Room :</b>  &nbsp;G-010</p>
+               <a href="#">RESUME</a>
+               <br>
+               <a href="#" onclick="showAppointHandler()">Appointment</a>
+            </div>
+          </div>
+          <div class="footer">
+            <p>Bodybuilding</p>
+            <h1>Name here</h1>
+          </div>
+        </div>
+        <div href="#" id="fitness" class="card coach_2">
+          <div class="social_media">
+            <!-- <a href="./pages/profile.html">VIEW PROFILE</a> -->
+            <div class="show_icons">
+                <p><b>Phone :</b> &nbsp; 09231823443</p>
+                <p><b>Email :</b> &nbsp;email@gmail.com</p>
+                <p><b>Room :</b>  &nbsp;G-010</p>
+                <a href="#">RESUME</a>
+                <br>
+                <a href="#" onclick="showAppointHandler()">Appointment</a>
+            </div>
+          </div>
+          <div class="footer">
+            <p>Fitness</p>
+            <h1>Name here</h1>
+          </div>
+        </div>
+        <div href="#" id="biking" class="card coach_3">
+          <div class="social_media">
+            <!-- <a href="./pages/profile.html">VIEW PROFILE</a> -->
+            <div class="show_icons">
+                <p><b>Phone :</b> &nbsp; 09231823443</p>
+               <p><b>Email :</b> &nbsp; email@gmail.com</p>
+               <p><b>Room :</b>  &nbsp; G-010</p>
+               <a href="#">RESUME</a>
+               <br>
+               <a href="#" onclick="showAppointHandler()">Appointment</a>
+            </div>
+          </div>
+          <div class="footer">
+            <p>Biking</p>
+            <h1>Name here</h1>
+          </div>
+        </div>
+        <div href="#" id="cardio" class="card coach_4">
+            <div class="social_media">
+              <!-- <a href="./pages/profile.html">VIEW PROFILE</a> -->
+              <div class="show_icons">
+                <p><b>Phone :</b> &nbsp; 09231823443</p>
+                <p><b>Email :</b> &nbsp; email@gmail.com</p>
+                <p><b>Room :</b>  &nbsp; G-010</p>
+                <a href="#">RESUME</a>
+                <br>
+                <a href="#" onclick="showAppointHandler()">Appointment</a>
+              </div>
+            </div>
+            <div class="footer">
+              <p>Cardio-Training</p>
+              <h1>Name here</h1>
+            </div>
+          </div>
+          <div href="#" id="lesson" class="card coach_5">
+            <div class="social_media">
+              <!-- <a href="./pages/profile.html">VIEW PROFILE</a> -->
+              <div class="show_icons">
+                <p><b>Phone :</b> &nbsp; 09231823443</p>
+                <p><b>Email :</b> &nbsp; email@gmail.com</p>
+                <p><b>Room :</b>  &nbsp; G-010</p>
+                <a href="#">RESUME</a>
+                <br>
+                <a href="#" onclick="showAppointHandler()">Appointment</a>
+              </div>
+            </div>
+            <div class="footer">
+              <p>Group Lesson</p>
+              <h1>Name here</h1>
+            </div>
+          </div>
+      </div>
+     
+    </div>
+
+    <!-- our gym location ======================================== -->
+    <div class="location">
+        <div class="location_top">
+            <h1>GET STARTED TODAY</h1>
+            <a href="#">CONTACT US</a>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1GR7Yuz5Wv96esaKGhND6_tJOFMIp59d2&ehbc=2E312F" width="100%" height="480"></iframe>
+       
+            <div class="contact">
+                <div class="contact_top">
+                    <b><p>WEEKDAY:</p></b>
+                    <div class="right">
+                        <p>WEEK DAY:  06:30 - 11:30</p>
+                        <p>WEEK DAY:  07:00 - 22:00</p>
+                        <p>WEEK DAY:  09:00 - 18:00</p>
+                    </div>
+                </div>
+                <br>
+                <b><p>CONTACT US</p></b>
+                <div class="row">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Phone">
+                </div>
+               <input type="text"  id="pass" placeholder="Password">
+               <input type="text"  id="pass" placeholder="Confirm Password">
+               <button>SIGN IN</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

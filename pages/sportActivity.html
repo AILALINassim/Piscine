@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Activity</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="top" style="background-image: none!important;background-color: orange;height: 60vh;">
+        <!-- header section starting here ========================== -->
+        <div class="header">
+          <div class="row">
+            <div class="left">
+              <h1>LOGO</h1>
+            </div>
+            <div class="right">
+              <a href="../index.html">Home</a>
+              <a href="#" onclick="showSearchHandler()">Browse</a>
+              <a href="../index.html#browseAll">Browse All</a>
+              <a href="../pages/login.html">My Account</a>
+              <a href="">Appointments</a>
+              <a href="../pages/servicess.html">Services</a>
+              <div class="menu" onclick="showMobileMenuHandler()">
+                <p>Menu</p>
+                <img src="../assets/white-menu-icon-4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- header section end here =============================== -->
+  
+  
+        <!-- search section start here ============== -->
+         <div class="search" id="search">
+          <span onclick="hideSearchHandler()">x</span>
+            <form action="#">
+                <input type="text" placeholder="Search here...">
+                <button>Search</button>
+            </form>
+         </div>
+        <!-- mobile menu section start here =========================== -->
+        <div class="mobile" id="menuBack" onclick="hideMobileMenuHandler()">
+          <div class="menu" id="menu">
+            <a href="#">Home</a>
+            <a href="#">Browse</a>
+            <a href="#browseAll">Browse All</a>
+              <a href="./pages/login.html">My Account</a>
+              <a href="./pages/appointment.html">Appointments</a>
+              <a href="./pages/servicess.html">Services</a>
+          </div>
+        </div>
+        <!-- mobile menu section end here =========================== -->
+  
+        <!-- main content section start here, hero section ==================== -->
+        <div class="main-section">
+          <div class="row">
+            <h3>Home</h3>
+            <h1>SPORTING ACTIVITY</h1>
+          </div>
+        </div>
+        <!-- main content section end here, hero section ==================== -->
+      </div>
+       <!-- browse all category section here =========================== -->
+       <div class="browse-all" id="browseAll">
+        <div class="left"  style="background-image: url('../assets/football\ section.jfif');">
+          <div class="left_inner">
+            <h1>Football</h1>
+            <a href="#football">READ MORE</a>
+          </div>
+        </div>
+        <div class="center"  style="background-image: url('../assets/rugby\ section.jfif');">
+          <div class="center_inner">
+            <h1>Rugby</h1>
+            <a href="#rugby">READ MORE</a>
+          </div>
+        </div>
+        <div class="right"  style="background-image: url('../assets/tennis\ section.png');">
+          <div class="right_inner">
+            <h1>Tennis</h1>
+            <a href="#tennis">READ MORE</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="browse-all" id="browseAll">
+        <div class="left"  style="background-image: url('../assets/tennis\ section.png');">
+          <div class="left_inner">
+            <h1>Diving</h1>
+            <a href="#diving">READ MORE</a>
+          </div>
+        </div>
+        <div class="center"  style="background-image: url('../assets/swimming\ category.jfif');">
+          <div class="center_inner">
+            <h1>Swimming</h1>
+            <a href="#swimming">READ MORE</a>
+          </div>
+        </div>
+        
+        
+      </div>
+
+        <!-- our team section start here ========================= -->
+    <div class="our_team">
+        <div class="appointmentForm" id="appointment">
+            <div class="inner">
+                <span onclick="hideAppointHandler()">x</span>
+               <h1>Book An Appointment</h1>
+               <h4>Gym Trainer</h4>
+               <p style="margin-bottom: 10px;">United States</p>
+               <hr>
+               <p>Email Address</p>
+               <input type="text" placeholder="Email">
+               <p>Phone Number</p>
+               <input type="text" placeholder="0238231266326">
+               <p>Tags</p>
+               <input type="text" placeholder="Add here">
+               <br>
+               <br>
+               <input type="date" placeholder="Date">
+            </div>
+        </div>
+      <div class="our_team_top">
+        <h1>Our Team Member</h1>
+      </div>
+      <div class="row">
+        <div href="#" id="football" class="card coach_1" style="background-image: url('../assets/football\ coach.webp');"> 
+          <div class="social_media">
+            <!-- <a href="./pages/profile.html">VIEW PROFILE</a> -->
+            <div class="show_icons">
+               <p><b>Phone :</b> &nbsp; 09231823443</p>
+               <p><b>Email :</b> &nbsp;email@gmail.com</p>
+               <p><b>Room :</b>  &nbsp;G-010</p>
+               <a href="#">RESUME</a>
+               <br>
+               <a href="#" onclick="showAppointHandler()">Appointment</a>
+            </div>
+          </div>
+          <div class="footer">
+            <p>Football</p>
+            <h1>Name here</h1>
+          </div>
+        </div>
+        <div href="#" id="rugby" class="card coach_2" style="background-image: url('../assets/rugby\ coach.png');">
+          <div class="social_media">
+            <!-- <a href="./pages/profile.html">VIEW PROFILE</a> -->
+            <div class="show_icons">
+                <p><b>Phone :</b> &nbsp; 09231823443</p>
+                <p><b>Email :</b> &nbsp;email@gmail.com</p>
+                <p><b>Room :</b>  &nbsp;G-010</p>
+                <a href="#">RESUME</a>
+                <br>
+                <a href="#" onclick="showAppointHandler()">Appointment</a>
+            </div>
+          </div>
+          <div class="footer">
+            <p>Rugby</p>
+            <h1>Name here</h1>
+          </div>
+        </div>
+        <div href="#" id="tennis" class="card coach_3" style="background-image: url('../assets/tennis\ coach.jfif');">
+          <div class="social_media">
+            <!-- <a href="./pages/profile.html">VIEW PROFILE</a> -->
+            <div class="show_icons">
+                <p><b>Phone :</b> &nbsp; 09231823443</p>
+               <p><b>Email :</b> &nbsp; email@gmail.com</p>
+               <p><b>Room :</b>  &nbsp; G-010</p>
+               <a href="#">RESUME</a>
+               <br>
+               <a href="#" onclick="showAppointHandler()">Appointment</a>
+            </div>
+          </div>
+          <div class="footer">
+            <p>Tennis</p>
+            <h1>Name here</h1>
+          </div>
+        </div>
+        <div href="#" id="diving" class="card coach_4" style="background-image: url('../assets/diving\ coach.jpg');">
+            <div class="social_media">
+              <!-- <a href="./pages/profile.html">VIEW PROFILE</a> -->
+              <div class="show_icons">
+                <p><b>Phone :</b> &nbsp; 09231823443</p>
+                <p><b>Email :</b> &nbsp; email@gmail.com</p>
+                <p><b>Room :</b>  &nbsp; G-010</p>
+                <a href="#">RESUME</a>
+                <br>
+                <a href="#" onclick="showAppointHandler()">Appointment</a>
+              </div>
+            </div>
+            <div class="footer">
+              <p>Diving</p>
+              <h1>Name here</h1>
+            </div>
+          </div>
+          <div href="#" id="swimming" class="card coach_5" style="background-image: url('../assets/swimming\ coach.jpeg');">
+            <div class="social_media">
+              <!-- <a href="./pages/profile.html">VIEW PROFILE</a> -->
+              <div class="show_icons">
+                <p><b>Phone :</b> &nbsp; 09231823443</p>
+                <p><b>Email :</b> &nbsp; email@gmail.com</p>
+                <p><b>Room :</b>  &nbsp; G-010</p>
+                <a href="#">RESUME</a>
+                <br>
+                <a href="#" onclick="showAppointHandler()">Appointment</a>
+              </div>
+            </div>
+            <div class="footer">
+              <p>Swimming</p>
+              <h1>Name here</h1>
+            </div>
+          </div>
+      </div>
+     
+    </div>
+      
+    <script src="../js/app.js"></script>
+</body>
+</html>

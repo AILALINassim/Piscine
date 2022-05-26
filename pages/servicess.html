@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="top" style="background-image: none!important;background-color: orange;height: 60vh;">
+        <!-- header section starting here ========================== -->
+        <div class="header">
+          <div class="row">
+            <div class="left">
+              <h1>LOGO</h1>
+            </div>
+            <div class="right">
+              <a href="#">Home</a>
+              <a href="#" onclick="showSearchHandler()">Browse</a>
+              <a href="../index.html#browseAll">Browse All</a>
+              <a href="../pages/login.html">My Account</a>
+              <a href="">Appointments</a>
+              <a href="../pages/servicess.html">Services</a>
+              <div class="menu" onclick="showMobileMenuHandler()">
+                <p>Menu</p>
+                <img src="../assets/white-menu-icon-4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- header section end here =============================== -->
+  
+  
+        <!-- search section start here ============== -->
+         <div class="search" id="search">
+          <span onclick="hideSearchHandler()">x</span>
+            <form action="#">
+                <input type="text" placeholder="Search here...">
+                <button>Search</button>
+            </form>
+         </div>
+        <!-- mobile menu section start here =========================== -->
+        <div class="mobile" id="menuBack" onclick="hideMobileMenuHandler()">
+          <div class="menu" id="menu">
+            <a href="#">Home</a>
+            <a href="#">Browse</a>
+            <a href="#browseAll">Browse All</a>
+              <a href="./pages/login.html">My Account</a>
+              <a href="./pages/appointment.html">Appointments</a>
+              <a href="./pages/servicess.html">Services</a>
+          </div>
+        </div>
+        <!-- mobile menu section end here =========================== -->
+  
+        <!-- main content section start here, hero section ==================== -->
+        <div class="main-section">
+          <div class="row">
+            <h3>Home</h3>
+            <h1>SERVICES</h1>
+          </div>
+        </div>
+        <!-- main content section end here, hero section ==================== -->
+        <img style="width: 90%;margin:50px auto;display: block;height: 500px;" src="../assets/gym rules.png" alt="">
+
+
+          <!-- class time table ==================================== -->
+    <div class="time_table">
+        <div class="time_table_top">
+            <h1>Class Time Table</h1>
+        </div>
+        <div class="table_top_headers">
+            <p>ALL CLASS</p>
+            <p>CROSSFIT</p>
+            <p>LUNGE BALL</p>
+            <p>PPSR</p>
+            <p>WALLS</p>
+            <p>CANDY</p>
+        </div>
+        <div class="row">
+            <table style="width: 100%;">
+                <tr>
+                <th></th>
+                <th style="border: none;">MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                <th>SUN</th>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td>
+                        10:00-14:00 <br>
+                     <span style="color: #DA361B;">CROSSFIT LV1</span>
+                    </td>
+                    <td></td>
+                    <td>
+                        10:00-15:00 <br>
+                        <span style="color: #DA361B;">CROSSFIT LV1</span>
+                    </td>
+                    <td></td>
+                    <td>
+                        10:00-13:00 <br>
+                        <span style="color: #DA361B;">LUNGE BALL BUR</span>
+                    </td>
+                    <td></td>
+                    <td>
+                        10:00-13:00 <br>
+                        <span style="color: #DA361B;">LUNGE BALL BUR</span>
+                    </td>
+                    
+                    </tr>
+                <tr>
+                <td>14:00</td>
+                <td></td>
+                <td> 14:00-17:00 <br>
+                    <span style="color: #DA361B;">LUNGE BALL BUR</span></td>
+                <td></td>
+                <td>
+                    10:00-17:00 <br>
+                    <span style="color: #DA361B;">CROSSFIT LV1</span>
+                </td>
+                <td></td>
+                <td>
+                     14:00-15:00 <br>
+                    <span style="color: #DA361B;">WALL TO KNEES</span></td>
+                <td></td>
+                </tr>
+                <tr>
+                    <td>16:00</td>
+                <td>
+                    16:00-18:00 <br>
+                    <span style="color: #DA361B;">LUNGE BALL BUR</span>
+                </td>
+                <td></td>
+                <td>
+                    16:00-19:00 <br>
+                    <span style="color: #DA361B;">CANDY</span>
+                </td>
+                <td></td>
+                <td>
+                    16:00-19:00 <br>
+                    <span style="color: #DA361B;">CANDY</span>
+                </td>
+                <td>
+                    16:00-17:00 <br>
+                    <span style="color: #DA361B;">PPSR</span>
+                </td>
+                <td>
+                    16:00-20:00 <br>
+                    <span style="color: #DA361B;">MURPH</span>
+                </td>
+                </tr>
+                <tr>
+                    <td>18:00</td>
+                <td>
+                    18:00-20:00 <br>
+                    <span style="color: #DA361B;">WALL TO KNEES</span>
+                </td>
+                <td>
+                    18:00-20:00 <br>
+                    <span style="color: #DA361B;">PPSR</span>
+                </td>
+                <td>
+                   
+                </td>
+                <td> 18:00-22:00 <br>
+                    <span style="color: #DA361B;">CHALSEA</span></td>
+                <td></td>
+                <td>
+                    18:00-22:00 <br>
+                    <span style="color: #DA361B;">ANNIE</span>
+                </td>
+                <td>21</td>
+                </tr>
+                <tr>
+                    <td>20:00</td>
+                <td>
+                    21:00-23:00 <br>
+                    <span style="color: #DA361B;">LUNGE BALL BUR</span>
+                </td>
+                <td>
+                    20:00-22:00 <br>
+                    <span style="color: #DA361B;">WALLS TO KNEES</span>
+                </td>
+                <td>
+                    20:00-23:00 <br>
+                    <span style="color: #DA361B;">WALLS TO KNEES</span>
+                </td>
+                <td></td>
+                <td id="fit">
+                    22:00-23:00 <br>
+                    <span style="color: #DA361B;" >CROSSFIT LV2</span>
+                </td>
+                <td></td>
+                <td id="fit">
+                    21:00-23:00 <br>
+                    <span style="color: #DA361B;" >CROSSFIT LV2</span>
+                </td>
+                </tr>
+                </table>
+        </div>
+        
+    </div>
+
+      </div>
+
+    
+    <script src="../js/app.js"></script>
+</body>
+</html>
