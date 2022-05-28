@@ -1,48 +1,11 @@
 <?php
-    // A METTRE DANS LE HTML POUR OUVIR GRACE AU JS LA PAGE AVEC TOUS LES CRENEAUX DE LA BDD 
-    // <input type="button" name="rdvButton" onClick="document.location.href='path.html'">
-    /*if(array_key_exists('rdvButton', $_POST)) {
-        $conn = mysqli_connect("localhost", "root", "", "edt");
-        if (!$conn) {
-            die("Connection failed: " . mysqli_connect_error());
-        }
+    session_start();
+    // get the ID_Client in the session
 
-        $sql = 'SELECT * FROM planning';
-
-        $result = mysqli_query($conn, $sql);
-
-        $planning = mysqli_fetch_all($result);
-
-        mysqli_free_result($result);
-
-        mysqli_close($conn);
-
-        print_r($planning);
-
-        // sql request to get the nom attribute sorted by sport
-        $sql = 'SELECT nom FROM planning ORDER BY sport';
-    }*/
-
-
-    /*$conn = mysqli_connect("localhost", "root", "", "edt");
-        if (!$conn) {
-            die("Connection failed: " . mysqli_connect_error());
-        }
-
-        $sql = 'SELECT nom, creneaux, sport FROM planning ORDER BY sport';
-
-        $result = mysqli_query($conn, $sql);
-
-        $planning = mysqli_fetch_all($result);
-
-        mysqli_free_result($result);
-
-        mysqli_close($conn);
-
-        print_r($planning);
-
-        // sql request to get the nom and creneaux attributes sorted by sport*/
-        
+    /* A MODIFIER POUR QUE CA SOIT GENERIQUE */
+    $ID_Client = 'azertyuiop';
+    //mettre id client dans form avec input hidden
+    //mettre ça ligne 28 : $ID_Client = $_POST['ID_Client'];
 ?>
 
 <html lang="en">
@@ -55,18 +18,33 @@
             padding: 10px;
         }
     </style>
+
     <?php
-        $conn = mysqli_connect("localhost", "root", "", "edt");
+        $conn = mysqli_connect("localhost", "root", "", "omnes");
+
+        if(isset($_POST['submit-button'])) {
+            // get the ID_Reservation when we click the corresponding button
+            $ID_Reservation = $_POST['myIDReservation'];
+            //$ID_Client = $_POST['ID_Client'];
+            // sql request to set the ID_Reservation with ID_Reservation in the client table
+            $sql = "UPDATE client SET ID_Reservation = '$ID_Reservation' WHERE ID_Client = '$ID_Client'";
+            // apply the request
+            $conn->query($sql);
+        }
+
+        mysqli_close($conn);
+    ?>
+
+    <?php
+        $conn = mysqli_connect("localhost", "root", "", "omnes");
         if (!$conn) {
             die("Connection failed: " . mysqli_connect_error());
         }
 
-        $sql = 'SELECT nom, FORMAT (creneaux, "dd/MM/yyyy") as date, sport FROM planning ORDER BY sport';
-
+        // sql request to get the date, heure and prix attributes from reservation and associated coach with the id_coach
+        $sql = 'SELECT date, heure, prix, coach.prenom, coach.nom, coach.activite, ID_Reservation FROM reservation, coach WHERE reservation.ID_Coach = coach.ID_Coach ORDER BY date';
         $result = mysqli_query($conn, $sql);
-
         $planning = mysqli_fetch_all($result);
-
         mysqli_free_result($result);
 
         mysqli_close($conn);
@@ -79,20 +57,34 @@
                         <div>
                             <h3>
                                 <!-- mettre en indice le numéro de colonne du sport (/!\ commence ) 0) -->
-                                <?php echo htmlspecialchars($rdv['2']); ?>
+                                <?php echo htmlspecialchars($rdv['5']); ?>
                             </h3>
-                            <div>
+                            <h4>
+                                <!-- mettre en indice le numéro de colonne du sport (/!\ commence ) 0) -->
+                                <?php   echo htmlspecialchars($rdv['3']);
+                                        echo " ";
+                                        echo htmlspecialchars($rdv['4']); ?>
+                            </h4>
+                            <p>
                                 <!-- mettre en indice le numéro de colonne du coach (/!\ commence ) 0) -->
                                 <?php echo htmlspecialchars($rdv['0']); ?>
-                            </div>
-                            <div>
                                 <!-- mettre en indice le numéro de colonne du creneaux (/!\ commence ) 0) -->
                                 <?php echo htmlspecialchars($rdv['1']); ?>
-                            </div> 
+                                <br>
+                                <?php   echo htmlspecialchars($rdv['2']); 
+                                        echo "€"
+                                ?>
+                            </p> 
                         </div>
                         <div>
-                            <a href="#">book</a>
-                            <br> <br>
+                            <form action="test.php" method="post" enctype="multipart/form-data">
+                                <?php
+                                    echo "<input type='hidden' value='$rdv[6]' name='myIDReservation'>";
+                                ?>
+                                <button type="submmit" name="submit-button">
+                                    Réserver
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
